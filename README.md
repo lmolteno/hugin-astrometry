@@ -24,3 +24,9 @@ python3 <path to hugin-astrometry>/main.py
 
 It's required that the filename of the WCS match the name of the image, and that those are the only two files with that name (ignoring the file extension) in that directory.
 The information required to associate an arbitrary WCS file with the image is in there, but it's a bit of a pain to get.
+
+## Issues
+Here, the control points are bunched up, and not very spread out over the whole image.
+![image showing control points bunched up in one corner when more overlap exists](/../images/images/showing_issues.png)
+
+Also, as a natural limitation of this method of finding control points, if there is too long taken between shots, the sky will have rotated significantly enough for the horizon to get a bit wobbly. The image above is a combination of 6s exposures, with as little time between photos as possible.
