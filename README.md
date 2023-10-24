@@ -1,4 +1,6 @@
-# hugin-astrometry
+# Hugin Astrometry
+Using astrometry.net to create hugin control points for astrophotographic panoramas.
+
 Hugin isn't really designed for this, so it's a bit hit or miss with the photometric matching, e.g. sometimes I'll get really blown out highlights. I've found that just adding _tons_ of control points fixes this. When you open the project it will also throw out some of the control points for some reason, perhaps because the borders of the WCS aren't to Hugin's standard, but as long as there are some left over. Usually I then run the geometric optimiser, then Hugin CPFind (prealigned), then the geometric optimiser and then the photometric optimiser (mostly because I have no idea exactly what these do in terms of how much existing alignment information they use), and that has given me reasonable results.
 
 ![image showing lunar eclipse, aurora](/../images/images/pano2_v2.jpg)
